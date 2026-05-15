@@ -1,5 +1,5 @@
 function solucao() {
-    const campo = document.getElementById("campo").value;
+    let campo = document.getElementById("campo").value;
 
     let invertida = "";
 

@@ -1,6 +1,6 @@
 function solucao() {
-    const campo = document.getElementById("campo").value;
-    const vetor = campo.split(", ");
+    let campo = document.getElementById("campo").value;
+    let vetor = campo.split(", ");
     let novoVetor = [];
 
     for(let i = 0; i < vetor.length; i++){

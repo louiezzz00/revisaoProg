@@ -1,7 +1,7 @@
 function solucao(n){
-    const resultado = [];
+    let resultado = [];
     
-    const campo = Number(document.getElementById("campo").value);
+    let campo = Number(document.getElementById("campo").value);
 
     for (let i = 1; i <= campo; i++) {
 
