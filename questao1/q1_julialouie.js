@@ -1,16 +1,25 @@
 function solucao(n){
-    let valor = document.getElementById("campo").value;
-    resultado = [];
-    for(let x = 0; x <= valor; x++){
-        if(valor[x] % 3 === 0){
-            
-        }else if(valor[x] % 5 === 0){
+    const resultado = [];
+    
+    const campo = Number(document.getElementById("campo").value);
 
-        }else if(valor[x] % 3 === 0 && valor[x] % 5 === 0){
+    for (let i = 1; i <= campo; i++) {
 
-        }else if(valor[x] % 7 === 0){
+        if (i % 3 === 0 && i % 5 === 0) {
+            resultado.push("FizzBuzz");
 
+        } else if (i % 3 === 0) {
+            resultado.push("Fizz");
+
+        } else if (i % 5 === 0) {
+            resultado.push("Buzz");
+               
+        } else if (i % 7 === 0) {
+            resultado.push("Boom");
+
+        } else {
+            resultado.push(i);
         }
     }
-    document.getElementById("saida").innerHTML = resultado;
+    document.getElementById("saida").innerHTML = resultado.join(", ");
 }
