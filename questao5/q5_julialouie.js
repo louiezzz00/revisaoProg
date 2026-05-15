@@ -14,21 +14,17 @@ function solucao() {
         if (senha >= "A" && senha <= "Z") {
             temMaiuscula = true;
         }
-
-        if (senha >= "0" && senha <= "9") {
+        else if (senha >= "0" && senha <= "9") {
             temNumero = true;
         }
-
-        if ("!@#$%&*".includes(senha)) {
+        else if ("!@#$%&*".includes(senha)) {
             temEspecial = true;
         }
     }
 
     if (temMaiuscula && temNumero && temEspecial) {
-        document.getElementById("saida").innerHTML =
-            "Senha válida";
+        document.getElementById("saida").innerHTML = "Senha válida";
     } else {
-        document.getElementById("saida").innerHTML =
-            "Senha inválida";
+        document.getElementById("saida").innerHTML = "Senha inválida";
     }
 }
